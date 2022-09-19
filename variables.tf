@@ -70,6 +70,12 @@ variable "is_primary_cluster" {
   default     = true
 }
 
+variable "is_headless_cluster" {
+  description = "Determines whether cluster is headless (set to `true` for replica clusters)"
+  type        = bool
+  default     = false
+}
+
 variable "cluster_use_name_prefix" {
   description = "Whether to use `name` as a prefix for the cluster"
   type        = bool
